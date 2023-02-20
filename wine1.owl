@@ -1,0 +1,33 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://www.w3.org/TR/2003/m#">
+  <owl:Class rdf:about="http://www.w3.org/TR/2003/m#Wine">
+    <j.0:WhiteWine>whiteWine</j.0:WhiteWine>
+    <j.0:RedWine>redWine</j.0:RedWine>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/TR/2003/m#cheese"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/m#WhiteWine"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/m#RedWine">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/m#OldCheese"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/TR/2003/m#YoungCheese">
+    <owl:inverseOf rdf:resource="http://www.w3.org/TR/2003/m#WhiteWine"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/TR/2003/m#yellowCheese"/>
+  <j.0:Wine rdf:about="http://www.w3.org/TR/2003/m#BeaulieuVineyard">
+    <j.0:WhiteWine>White</j.0:WhiteWine>
+  </j.0:Wine>
+  <j.0:Wine rdf:about="http://www.w3.org/TR/2003/m#usWine1974"/>
+  <j.0:cheese rdf:about="http://www.w3.org/TR/2003/m#DorBlue">
+    <j.0:yellowCheese> YellowCheese</j.0:yellowCheese>
+    <j.0:YoungCheese> YoungCheese</j.0:YoungCheese>
+  </j.0:cheese>
+  <j.0:Wine rdf:about="http://www.w3.org/TR/2003/m#AbrauDurso">
+    <j.0:RedWine>Red</j.0:RedWine>
+  </j.0:Wine>
+</rdf:RDF>
